@@ -9,9 +9,9 @@ public class Solution {
                 int firstEnd = n -1;
                 int secStart = n;
                 int secEnd = len - 1;
-                Reverse(str_arr, firstStart, firstEnd);
-                Reverse(str_arr, secStart, secEnd);
-                Reverse(str_arr, firstStart, secEnd);
+                Reverse(str_arr, firstStart, firstEnd);//翻转前n个字符
+                Reverse(str_arr, secStart, secEnd);//翻转后面
+                Reverse(str_arr, firstStart, secEnd);//翻转全部字符串
             }
         }
         String rst = "";
